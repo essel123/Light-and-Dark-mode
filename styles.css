@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+body{
+    background: var(--bgcolor);
+}
+
+:root{
+    --bgcolor:#ffffff;
+    --txtcolor:rgb(1, 1, 56);
+    --formbg:rgba(52, 8, 155, 1);
+    --boxshad:1px 1px 10px 1px rgb(0, 0, 0);
+    --btnbg:#000;
+    --formcolor:white;
+}
+
+.dark{
+    --bgcolor: #050505;
+    --txtcolor: rgb(255, 255, 255);
+    --formbg: rgba(0, 0, 0, 0.9);
+    --btnbg:rgb(52,8,155);
+    --boxshad: 1px 1px 10px 1px rgb(255, 255, 255);
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    
+   
+}
+nav ul li{
+    padding: 12px;
+    list-style-type: none;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--txtcolor);
+}
+nav{
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+    margin-right: 10px;
+    /* position: absolute;
+    left: 40%;
+    align-items: center;
+    justify-content: center; */
+}
+nav .mode img{
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+
+
+/* .image{
+    cursor: pointer;
+}
+:root{
+    --width:200px;
+    --zindex :1;
+}
+.test{
+    width: var(--width);
+    background: #000;
+    z-index: var(--zindex);
+
+}
+
+.try{
+    --width:0px;
+    --zindex:-10;
+
+} */
+
+.form{
+    display: flex;
+  /* background-image: url('profile.jpg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; */
+    max-width: 400px;
+    height: 300px;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+   
+   
+}
+.title-form h1{
+    color: var(--formcolor);
+    font-weight: bold;
+}
+.space{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: var(--formbg);
+    box-shadow: var(--boxshad);
+    border-radius: 12px;
+}
+
+.form-fields{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.form-fields input{
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    border-radius: 4px;
+}
+
+
+
+.btn-submit button{
+    background: var(--btnbg);
+    cursor: pointer;
+    padding: 10px;
+    width: 100px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: var(--formcolor);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+ 
+
