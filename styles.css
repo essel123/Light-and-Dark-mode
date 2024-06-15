@@ -124,6 +124,7 @@ nav .mode img{
     border: none;
     outline: none;
     border-bottom: 1px solid white;
+    color: white;
     background: transparent;
     border-radius: 4px;
 }
